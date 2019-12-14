@@ -6,7 +6,7 @@ import logo from '../../assets/images/logo.png';
 
 export const Wrapper = styled.SafeAreaView`
   flex: 1;
-  background: ${colors.dark};
+  background: #141419;
   flex-direction: row;
 `;
 export const Container = styled.View`
