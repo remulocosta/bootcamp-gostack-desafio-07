@@ -35,6 +35,7 @@ export const BasketContainer = styled.TouchableOpacity`
   align-items: flex-end;
   justify-content: flex-end;
 `;
+
 export const ItemCount = styled.Text`
   position: absolute;
   text-align: center;
