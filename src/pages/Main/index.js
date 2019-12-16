@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { FlatList } from 'react-native';
+import PropTypes from 'prop-types';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+
 import * as CartActions from '../../store/modules/cart/actions';
 
 import {
@@ -84,6 +86,11 @@ class Main extends Component {
 
 Main.navigationOptions = {
   title: 'Main Page',
+};
+
+Main.propTypes = {
+  amount: PropTypes.arrayOf(PropTypes.object).isRequired,
+  addToCartRequest: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => ({

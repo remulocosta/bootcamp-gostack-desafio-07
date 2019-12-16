@@ -1,7 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+
 import * as CartActions from '../../store/modules/cart/actions';
 
 import { formatPrice } from '../../util/format';
@@ -31,13 +34,7 @@ import {
   EmptyText,
 } from './styles';
 
-function Cart({
-  navigation,
-  products,
-  total,
-  removeFromCart,
-  updateAmountRequest,
-}) {
+function Cart({ products, total, removeFromCart, updateAmountRequest }) {
   // const Uproducts = [
   //   {
   //     id: 1,
@@ -143,6 +140,13 @@ const mapStateToProps = state => ({
     )
   ),
 });
+
+Cart.propTypes = {
+  products: PropTypes.arrayOf(PropTypes.object).isRequired,
+  total: PropTypes.string.isRequired,
+  removeFromCart: PropTypes.func.isRequired,
+  updateAmountRequest: PropTypes.func.isRequired,
+};
 
 const mapDispatchToProps = dispatch =>
   bindActionCreators(CartActions, dispatch);
