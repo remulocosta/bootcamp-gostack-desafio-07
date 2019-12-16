@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>deafio07</string>
+	<string>desafio07</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -54,9 +54,9 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>UIAppFonts</key>
-<array>
-  <string>FontAwesome.ttf</string>
-  <string>MaterialIcons.ttf</string>
-</array>
+		<array>
+		  <string>MaterialIcons.ttf</string>
+		  <string>MaterialCommunityIcons.ttf</string>
+		</array>
 </dict>
 </plist>

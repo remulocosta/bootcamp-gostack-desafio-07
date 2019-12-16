@@ -24,13 +24,11 @@ export const ProductImage = styled.Image`
 
 export const ProductTitle = styled.Text`
   height: 60px;
-  margin: 0 10px;
   font-size: 16px;
 `;
 
 export const ProductPrice = styled.Text`
   font-size: 20px;
-  margin-left: 10px;
   margin-bottom: auto;
   font-weight: bold;
   margin-top: auto;

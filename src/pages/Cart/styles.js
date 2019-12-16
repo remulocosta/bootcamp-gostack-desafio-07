@@ -65,6 +65,7 @@ export const ProductAmount = styled.TextInput.attrs({
   border: 1px solid #ddd;
   border-radius: 4px;
   min-width: 52px;
+  color: #111;
 `;
 
 export const ProductSubtotal = styled.Text`
